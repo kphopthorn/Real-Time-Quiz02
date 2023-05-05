@@ -46,7 +46,7 @@ Answer query:
 ```sh
 create table stream3 with( KAFKA_TOPIC='topic3_1',value_format='AVRO') AS 
 SELECT gender as sex ,avg(calories_chicken) as avg_cal
-FROM stream1
+FROM clean_data
 GROUP BY gender
 EMIT CHANGES;
 ```
