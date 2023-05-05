@@ -41,6 +41,7 @@ RUN SCRIPT '/etc/sql/sink.sql';
 ```
 
 9. Question 1: What is the average number of calories participants guessed for the chicken piadina?
+
 Answer query:
 ```sh
 create table stream3 with( KAFKA_TOPIC='topic3_1',value_format='AVRO') AS 
@@ -51,6 +52,7 @@ EMIT CHANGES;
 ```
 
 10. Question 2: What is the most common breakfast option chosen by female participants who work part-time?
+
 Answer query:
 ```sh
 CREATE TABLE stream4 WITH (KAFKA_TOPIC='topic3_2', VALUE_FORMAT='AVRO')
@@ -62,6 +64,7 @@ EMIT CHANGES;
 ```
 
 11. Question 3: What is the most common comfort food reason for each gender?
+
 Answer query:
 ```sh
 CREATE TABLE stream5 WITH (KAFKA_TOPIC='topic3_3', VALUE_FORMAT='AVRO') AS
