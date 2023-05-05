@@ -50,7 +50,7 @@ GROUP BY gender
 EMIT CHANGES;
 ```
 
-10.Question 2: What is the most common breakfast option chosen by female participants who work part-time?
+10. Question 2: What is the most common breakfast option chosen by female participants who work part-time?
 Answer query:
 ```sh
 CREATE TABLE stream4 WITH (KAFKA_TOPIC='topic3_2', VALUE_FORMAT='AVRO')
@@ -61,7 +61,7 @@ GROUP BY breakfast
 EMIT CHANGES;
 ```
 
-11.Question 3: What is the most common comfort food reason for each gender?
+11. Question 3: What is the most common comfort food reason for each gender?
 Answer query:
 ```sh
 CREATE TABLE stream5 WITH (KAFKA_TOPIC='topic3_3', VALUE_FORMAT='AVRO') AS
