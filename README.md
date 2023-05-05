@@ -4,7 +4,13 @@
 3. ศุภิสรา อุดมลาภ 6420412013
 4. นภพล เสริมชาติเจริญกาล 6420412014
 
-
+conn = psycopg2.connect(
+    host="localhost",
+    port="5432",
+    user="root",
+    password="secret",
+    database="root"
+)
 
 
 
