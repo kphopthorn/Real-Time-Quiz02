@@ -127,4 +127,6 @@ docker-compose exec elasticsearch \
   curl -XGET 'localhost:9200/<replace with topic name>/_search?format=json&pretty'
 ```
 
+# Note:
+While running answer qeury. You can run second cell in ipynb file again for stream data into ksqlDB
 
