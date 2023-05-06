@@ -42,6 +42,10 @@ if connected you will see
   ```sh
 docker exec -ti postgres psql -c "select * from food"
 ```
+
+![image](https://user-images.githubusercontent.com/115726435/236605732-4a6b0654-e48d-4871-9941-8ab823aa7b29.png)
+
+
  Then we will insert the data by using second cell in ipynb file.
 
 6. Run create_stream1.sql to read data from postgres at topic 1.
