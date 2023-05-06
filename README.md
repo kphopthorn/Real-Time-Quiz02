@@ -46,23 +46,45 @@ docker exec -ti postgres psql -c "select * from food"
 ![image](https://user-images.githubusercontent.com/115726435/236605732-4a6b0654-e48d-4871-9941-8ab823aa7b29.png)
 
 
- Then we will insert the data by using second cell in ipynb file.
+ Then we will insert the data by running second cell in ipynb file. The data will be inserted row by row.
+ 
+ ![image](https://user-images.githubusercontent.com/115726435/236605800-010e67da-177f-487a-a480-d1e2de03489e.png)
 
-6. Run create_stream1.sql to read data from postgres at topic 1.
+After insert data. Topic "food" will be created automatically. Check topics by running this command in ksqlDB.
+```sh
+show topics;
+```
+
+you will see topic 'food' in ksqlDB
+
+![image](https://user-images.githubusercontent.com/115726435/236605932-3a05c24f-7bec-421c-82fa-76ba02f4b55c.png)
+
+
+6. Run create_stream1.sql to read data from postgres at topic 1 (food).
 
 ```sh
 RUN SCRIPT '/etc/sql/create_stream1.sql';
 ```
+![image](https://user-images.githubusercontent.com/115726435/236606148-9e6305ef-5ae9-4306-8343-75308ff8fcfe.png)
 
-7. Open another terminal and run clean_stream.sql to send cleaned data to topic 2.
+
+7. Open another terminal and open ksqlDB. Run clean_stream.sql to send cleaned data to topic2.
 ```sh
 RUN SCRIPT '/etc/sql/clean_stream.sql';
 ```
+![image](https://user-images.githubusercontent.com/115726435/236606250-54eedb28-94d0-4e46-9ad9-7b1668f6362c.png)
+
 
 8. Run SINK connector (elasticsearch-sink).
 ```sh
 RUN SCRIPT '/etc/sql/sink.sql';
 ```
+![image](https://user-images.githubusercontent.com/115726435/236606289-e6b05ef6-17f3-43a8-8338-66d6bd8ca60d.png)
+
+![image](https://user-images.githubusercontent.com/115726435/236606302-a1ede82c-f1e2-42bb-aaa6-b2bf55c09a1b.png)
+
+![image](https://user-images.githubusercontent.com/115726435/236606317-f73ba709-c42d-449b-b750-c8a7ab3b10e1.png)
+
 
 9. Question 1: What is the average number of calories participants guessed for the chicken piadina?
 
