@@ -75,18 +75,7 @@ RUN SCRIPT '/etc/sql/clean_stream.sql';
 ![image](https://user-images.githubusercontent.com/115726435/236606250-54eedb28-94d0-4e46-9ad9-7b1668f6362c.png)
 
 
-8. Run SINK connector (elasticsearch-sink).
-```sh
-RUN SCRIPT '/etc/sql/sink.sql';
-```
-![image](https://user-images.githubusercontent.com/115726435/236606289-e6b05ef6-17f3-43a8-8338-66d6bd8ca60d.png)
-
-![image](https://user-images.githubusercontent.com/115726435/236606302-a1ede82c-f1e2-42bb-aaa6-b2bf55c09a1b.png)
-
-![image](https://user-images.githubusercontent.com/115726435/236606317-f73ba709-c42d-449b-b750-c8a7ab3b10e1.png)
-
-
-9. Question 1: What is the average number of calories participants guessed for the chicken piadina?
+8. Question 1: What is the average number of calories participants guessed for the chicken piadina?
 
 Answer query:
 ```sh
@@ -97,7 +86,7 @@ GROUP BY gender
 EMIT CHANGES;
 ```
 
-10. Question 2: What is the most common breakfast option chosen by female participants who work part-time?
+9. Question 2: What is the most common breakfast option chosen by female participants who work part-time?
 
 Answer query:
 ```sh
@@ -109,7 +98,7 @@ GROUP BY breakfast
 EMIT CHANGES;
 ```
 
-11. Question 3: What is the most common comfort food reason for each gender?
+10. Question 3: What is the most common comfort food reason for each gender?
 
 Answer query:
 ```sh
@@ -120,6 +109,17 @@ WINDOW TUMBLING (SIZE 1 HOUR)
 WHERE comfort_food_reasons_coded_1 IS NOT NULL
 GROUP BY gender, comfort_food_reasons_coded_1;
 ```
+
+11. Run SINK connector (elasticsearch-sink).
+```sh
+RUN SCRIPT '/etc/sql/sink.sql';
+```
+![image](https://user-images.githubusercontent.com/115726435/236606289-e6b05ef6-17f3-43a8-8338-66d6bd8ca60d.png)
+
+![image](https://user-images.githubusercontent.com/115726435/236606302-a1ede82c-f1e2-42bb-aaa6-b2bf55c09a1b.png)
+
+![image](https://user-images.githubusercontent.com/115726435/236606317-f73ba709-c42d-449b-b750-c8a7ab3b10e1.png)
+
 
 12. Check output in NoSQLDB elasticsearch.
 ```sh
