@@ -4,6 +4,10 @@
 3. ศุภิสรา อุดมลาภ 6420412013
 4. นภพล เสริมชาติเจริญกาล 6420412014
 
+# Video Tutorial
+https://youtu.be/Ywrr7oJ2P0s
+
+
 ## Flow chart
 
 ![Flow](https://user-images.githubusercontent.com/115726435/236603012-930af08f-ad83-4303-a3eb-3a7069b1250d.JPG)
