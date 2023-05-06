@@ -103,7 +103,7 @@ EMIT CHANGES;
 Answer query:
 ```sh
 CREATE TABLE stream5 WITH (KAFKA_TOPIC='topic3_3', VALUE_FORMAT='AVRO') AS
-SELECT gender, comfort_food_reasons_coded_1, COUNT(*) AS count
+SELECT gender, comfort_food_reasons_coded_1, COUNT(*) AS count3_3
 FROM clean_data
 WINDOW TUMBLING (SIZE 1 HOUR) 
 WHERE comfort_food_reasons_coded_1 IS NOT NULL
