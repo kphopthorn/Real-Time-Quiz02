@@ -9,7 +9,8 @@ CREATE SINK CONNECTOR `elasticsearch-sinkfood3_1` WITH(
     "type.name"= 'changes',
     "value.converter"='io.confluent.connect.avro.AvroConverter',
     "value.converter.schema.registry.url"='http://schema-registry:8081',
-    "key.ignore"= 'true');
+    "key.ignore"= 'true',
+    "partitions"='2');
 
 
 CREATE SINK CONNECTOR `elasticsearch-sinkfood3_2` WITH(
@@ -20,7 +21,8 @@ CREATE SINK CONNECTOR `elasticsearch-sinkfood3_2` WITH(
     "type.name"= 'changes',
     "value.converter"='io.confluent.connect.avro.AvroConverter',
     "value.converter.schema.registry.url"='http://schema-registry:8081',
-    "key.ignore"= 'true');
+    "key.ignore"= 'true',
+    "partitions"='2');
 
 
 CREATE SINK CONNECTOR `elasticsearch-sinkfood3_3` WITH(
@@ -31,4 +33,5 @@ CREATE SINK CONNECTOR `elasticsearch-sinkfood3_3` WITH(
     "type.name"= 'changes',
     "value.converter"='io.confluent.connect.avro.AvroConverter',
     "value.converter.schema.registry.url"='http://schema-registry:8081',
-    "key.ignore"= 'true');
+    "key.ignore"= 'true',
+    "partitions"='2');
