@@ -4,6 +4,10 @@
 3. ศุภิสรา อุดมลาภ 6420412013
 4. นภพล เสริมชาติเจริญกาล 6420412014
 
+## Flow chart
+
+![Flow](https://user-images.githubusercontent.com/115726435/236603012-930af08f-ad83-4303-a3eb-3a7069b1250d.JPG)
+
 ## Installation and Setup
 
 1.
@@ -21,8 +25,20 @@ docker-compose exec ksqldb-cli  ksql http://ksqldb-server:8088
 RUN SCRIPT '/etc/sql/source.sql';
 ```
 
-4. Run ipynb file first cell for Create table in PostgresDB. 
-5. Run second cell for insert data to table.
+4. Open ipynb file.
+
+ install requirement
+ ```sh
+!pip install psycopg2
+```
+
+5. Run First cell in ipynb file for create table in PostgresDB
+ 
+ if table was created. We can check the food table in PostgresDB by this command in terminal.
+  ```sh
+docker exec -ti postgres psql -c "select * from food"
+```
+ Then we will insert the data by using second cell in ipynb file.
 
 6. Run create_stream1.sql to read data from postgres at topic 1.
 
@@ -80,4 +96,5 @@ GROUP BY gender, comfort_food_reasons_coded_1;
 docker-compose exec elasticsearch \
   curl -XGET 'localhost:9200/<replace with topic name>/_search?format=json&pretty'
 ```
+
 
