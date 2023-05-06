@@ -24,6 +24,10 @@ docker-compose exec ksqldb-cli  ksql http://ksqldb-server:8088
 ```sh
 RUN SCRIPT '/etc/sql/source.sql';
 ```
+if connected you will see
+
+![image](https://user-images.githubusercontent.com/115726435/236604783-8ecf23ac-d85a-4976-9ba2-a59f2f96f108.png)
+
 
 4. Open ipynb file.
 
