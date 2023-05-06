@@ -8,7 +8,7 @@
 
 ![Flow](https://user-images.githubusercontent.com/115726435/236603012-930af08f-ad83-4303-a3eb-3a7069b1250d.JPG)
 
-## Installation and Setup
+## Running Steps
 
 1.
 ```sh
