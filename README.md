@@ -75,5 +75,9 @@ WHERE comfort_food_ _coded_1 IS NOT NULL
 GROUP BY gender, comfort_food_reasons_coded_1;
 ```
 
-
+12. Check output in NoSQLDB elasticsearch.
+```sh
+docker-compose exec elasticsearch \
+  curl -XGET 'localhost:9200/<replace with topic name>/_search?format=json&pretty'
+```
 
