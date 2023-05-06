@@ -32,7 +32,7 @@ RUN SCRIPT '/etc/sql/source.sql';
 !pip install psycopg2
 ```
 
-5. Run First cell in ipynb file for create table in PostgresDB
+5. Run First cell in ipynb file for create table named food in PostgresDB
  
  if table was created. We can check the food table in PostgresDB by this command in terminal.
   ```sh
