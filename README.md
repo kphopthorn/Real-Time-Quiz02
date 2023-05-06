@@ -128,5 +128,5 @@ docker-compose exec elasticsearch \
 ```
 
 # Note:
-While running answer qeury. You can run second cell in ipynb file again for stream data into ksqlDB
+While running answer qeury. You can run second cell (insert data) in ipynb file again for stream data into ksqlDB
 
