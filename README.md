@@ -148,12 +148,10 @@ While running answer query. You can run second cell (insert data) in ipynb file 
 
 3. What is the most common comfort food reason for each gender?
 
-3.1
 
 <div>
     <a href="https://plotly.com/~napapol.s/21/" target="_blank" title="3_Most comfort food female" style="display: block; text-align: center;"><img src="https://plotly.com/~napapol.s/21.png" alt="3_Most comfort food female" style="max-width: 100%;width: 600px;"  width="600" 
     
-3.2
-
 <div>
-    <a href="https://plotly.com/~napapol.s/26/" target="_blank" title="3.2_Most comfort food male" style="display: block; text-align: center;"><img src="https://plotly.com/~napapol.s/26.png" alt="3.2_Most comfort food male" style="max-width: 100%;width: 600px;"  width="600" 
+    <a href="https://plotly.com/~napapol.s/26/" target="_blank" title="3.2_Most comfort food male" style="display: block; text-align: center;"><img src="https://plotly.com/~napapol.s/26.png" alt="3.2_Most comfort food male" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    
