@@ -134,3 +134,26 @@ docker-compose exec elasticsearch \
 # Note:
 While running answer query. You can run second cell (insert data) in ipynb file again for stream data into ksqlDB
 
+# Answer ploting
+
+1. What is the average number of calories participants guessed for the chicken piadina?
+<div>
+    <a href="https://plotly.com/~napapol.s/1/" target="_blank" title="1_Calories chicken by gender" style="display: block; text-align: center;"><img src="https://plotly.com/~napapol.s/1.png" alt="1_Calories chicken by gender" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+
+
+2. What is the most common breakfast option chosen by female participants who work part-time?
+<div>
+    <a href="https://plotly.com/~napapol.s/17/" target="_blank" title="2_Most breakfast female part-time." style="display: block; text-align: center;"><img src="https://plotly.com/~napapol.s/17.png" alt="2_Most breakfast female part-time." style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+
+
+3. What is the most common comfort food reason for each gender?
+
+3.1
+
+<div>
+    <a href="https://plotly.com/~napapol.s/21/" target="_blank" title="3_Most comfort food female" style="display: block; text-align: center;"><img src="https://plotly.com/~napapol.s/21.png" alt="3_Most comfort food female" style="max-width: 100%;width: 600px;"  width="600" 
+    
+3.2
+
+<div>
+    <a href="https://plotly.com/~napapol.s/26/" target="_blank" title="3.2_Most comfort food male" style="display: block; text-align: center;"><img src="https://plotly.com/~napapol.s/26.png" alt="3.2_Most comfort food male" style="max-width: 100%;width: 600px;"  width="600" 
